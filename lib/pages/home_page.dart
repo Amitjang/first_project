@@ -1,5 +1,7 @@
-import "package:flutter/material.dart";
+import 'dart:convert';
 
+import "package:flutter/material.dart";
+import 'package:google_fonts/google_fonts.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -8,11 +10,11 @@ class HomePage extends StatelessWidget {
     int days = 30;
     return Scaffold(
       appBar: AppBar(
-        title: Text("catalog app"),
+        title: Text("Catalog app"),
       ),
       body: Center(
         child: Container(
-          child: Text("welcome to $days days of flutter "),
+          child: Text("Welcome to $days days of flutter ",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,fontStyle: FontStyle.normal),),
         ),
       ),
       drawer: Drawer(),
